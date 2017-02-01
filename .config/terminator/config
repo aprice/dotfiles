@@ -1,0 +1,21 @@
+[global_config]
+  broadcast_default = off
+  focus = mouse
+  title_hide_sizetext = True
+[keybindings]
+[layouts]
+  [[default]]
+    [[[child1]]]
+      parent = window0
+      type = Terminal
+    [[[window0]]]
+      parent = ""
+      type = Window
+[plugins]
+[profiles]
+  [[default]]
+    background_darkness = 0.7
+    background_type = transparent
+    cursor_color = "#aaaaaa"
+    foreground_color = "#ffffff"
+    scrollback_lines = 5000
