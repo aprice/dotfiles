@@ -171,7 +171,7 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-set $Locker i3lock
+set $Locker i3lock -i ~/.config/i3/bgimg 
 set $mode_system System (l) lock, (e) logout, (s) suspend, (h) hibernate, (r) reboot, (Shift+s) shutdown
 mode "$mode_system" {
     bindsym l exec --no-startup-id $Locker, mode "default"
