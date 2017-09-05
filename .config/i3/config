@@ -178,7 +178,8 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-set $Locker i3lock -i ~/.config/i3/bgimg 
+#set $Locker i3lock -i ~/.config/i3/bgimg 
+set $Locker clonck
 set $mode_system System (l) lock, (e) logout, (s) suspend, (h) hibernate, (r) reboot, (Shift+s) shutdown
 mode "$mode_system" {
     bindsym l exec --no-startup-id $Locker, mode "default"
@@ -198,8 +199,8 @@ bindsym $mod+q mode "$mode_system"
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-        status_command i3status
-	tray_output primary
+    status_command i3status
+	#tray_output primary
 	# Disable scroll wheel actions
 	bindsym button4 nop
 	bindsym button5 nop
