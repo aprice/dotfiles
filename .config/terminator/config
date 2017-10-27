@@ -1,7 +1,9 @@
 [global_config]
   broadcast_default = off
   focus = mouse
+  title_font = PT Sans 14
   title_hide_sizetext = True
+  title_use_system_font = False
 [keybindings]
 [layouts]
   [[default]]

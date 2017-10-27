@@ -31,7 +31,10 @@ exec --no-startup-id xset -dpms s 0
 exec --no-startup-id compton -b
 exec --no-startup-id feh --bg-scale ~/.config/i3/bgimg
 exec --no-startup-id conky -c ~/.config/conky/config &
-exec --no-startup-id conky -c ~/.config/conky/shortcuts &
+#exec --no-startup-id conky -c ~/.config/conky/shortcuts &
+#exec --no-startup-id remmina -i >/dev/null 2>&1 &
+exec_always --no-startup-id numlockx on
+exec_always --no-startup-id clipit
 
 # Before i3 v4.8, we used to recommend this one as the default:
 # font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1

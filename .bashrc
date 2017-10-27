@@ -5,8 +5,6 @@ if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
 fi
 
-export GOPATH="/home/adrian/go"
-export PATH="$PATH:/home/adrian/go/bin"
 #[[ $- = *i* ]] && source ~/liquidprompt/liquidprompt
 
 # Uncomment the following line if you don't like systemctl's auto-paging feature:
@@ -21,3 +19,6 @@ if [ "$TERM" != "linux" ]; then
 fi
 
 # User specific aliases and functions
+alias lla="ls -la"
+alias emptytrash="rm -rf ~/.local/share/Trash/*"
+alias duch="du -chx --max-depth=1"
