@@ -1,0 +1,71 @@
+// Place your settings in this file to overwrite the default settings
+{
+    "editor.fontFamily": "'Fira Code', 'Source Code Pro', Consolas, 'Courier New', monospace",
+    "editor.fontLigatures": true,
+    "editor.insertSpaces": false,
+    "editor.scrollBeyondLastLine": false,
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.rulers": [
+        80
+    ],
+    "files.eol": "\n",
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+    "files.associations": {
+        "*.html.tpl": "html"
+    },
+    "terminal.integrated.cursorBlinking": true,
+    "window.zoomLevel": 1,
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.colorTheme": "Dark+ Material",
+    "html.format.enable": false,
+    "go.enableCodeLens": {
+        "references": false,
+        "runtest": true
+    },
+    "go.autocompleteUnimportedPackages": true,
+    "go.editorContextMenuCommands": {
+        "toggleTestFile": true,
+        "addTags": true,
+        "removeTags": false,
+        "testAtCursor": true,
+        "testFile": true,
+        "testPackage": true,
+        "generateTestForFunction": true,
+        "generateTestForFile": true,
+        "generateTestForPackage": false,
+        "addImport": true,
+        "testCoverage": true
+    },
+    "go.formatTool": "goreturns",
+    "go.lintTool": "gometalinter",
+    "go.lintFlags": [
+        "--deadline=5s",
+        "--tests",
+        "--disable=aligncheck",
+        "--disable=gocyclo",
+        "--disable=gotype"
+    ],
+    "terraform.formatOnSave": true,
+    "terraform.formatVarsOnSave": null,
+    "terraform.indexing": {
+        "enabled": true,
+        "indexerPath": "terraform-index",
+        "liveIndexing": true,
+        "delay": 500
+    },
+    "terraform.templateDirectory": "",
+    "[ruby]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2
+    },
+    "[yaml]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2
+    },
+    "[terraform]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2
+    }
+}
