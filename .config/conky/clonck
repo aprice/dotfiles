@@ -22,13 +22,13 @@ ${voffset -42}$color${font Josefin Sans Std:light:size=36}${time %A}
 ${voffset 0}$color2${font Josefin Sans Std:bold:size=36}${time %B}\
  $color${font Josefin Sans Std:light:size=28}${time %Y} 
 #
-${voffset 20}${color}${font PT Sans:bold:size=16}CPU$alignr$cpu%
+#${voffset 20}${color}${font PT Sans:bold:size=16}CPU$alignr$cpu%
 #
-${color}${font PT Sans:bold:size=16}RAM$alignr$mem$color2/$memmax$color$font
+#${color}${font PT Sans:bold:size=16}RAM$alignr$mem$color2/$memmax$color$font
 #
-${font PT Sans:bold:size=16}${color}Swap$alignr${swap}$color2/${swapfree}$color$font
-${voffset 10}${color2}${alignr}${execi 1200 whoami}@${nodename}
-${alignr}${color2}${font}uptime: ${color}${uptime_short}
-${voffset 5}${color2}${font}${alignr}kernel: ${color}${kernel}
+#${font PT Sans:bold:size=16}${color}Swap$alignr${swap}$color2/${swapfree}$color$font
+#${voffset 10}${color2}${alignr}${execi 1200 whoami}@${nodename}
+#${alignr}${color2}${font}uptime: ${color}${uptime_short}
+#${voffset 5}${color2}${font}${alignr}kernel: ${color}${kernel}
 ]]
 
