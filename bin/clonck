@@ -11,7 +11,7 @@ then
     exit 1
 fi
 
-conky -w "$winid" -c ~/.config/conky/clonck &
+conky -w "$winid" -c ~/.config/conky/clonck >/dev/null 2>&1 &
 conkypid=$!
 
 wait $i3lockpid
