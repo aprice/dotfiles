@@ -1,5 +1,5 @@
 function fish_prompt
-    ~/go/bin/powerline-go -error $status -shell bare
+    ~/go/bin/powerline-go -error $status -shell bare -cwd-max-depth 3 -cwd-max-dir-size 8 -modules 'cwd,git,hg,jobs,exit,root'
 end
 
 set -gx GOROOT /usr/local/go

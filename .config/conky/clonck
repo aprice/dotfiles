@@ -8,27 +8,22 @@ conky.config = {
         draw_shades = false,
         gap_x = 25,
         gap_y = 13,
-        minimum_width = 450,
+        minimum_width = 520,
         no_buffers = true,
         update_interval = 5.0,
         use_xft = true
 }
 
 conky.text = [[
+${font Josefin Sans Std:light:size=24}${alignc}L   O   C   K   E   D
+
 ${font Josefin Sans Std:light:size=136}${alignc}${time %H:%M}
-${voffset -60}$color${font Josefin Sans Std:light:size=96}$alignr${time %e}\
-${voffset -56}$color2${font Josefin Sans Std:bold:size=32}${exec snrt `date +%e`} 
-${voffset -42}$color${font Josefin Sans Std:light:size=36}${time %A}
-${voffset 0}$color2${font Josefin Sans Std:bold:size=36}${time %B}\
- $color${font Josefin Sans Std:light:size=28}${time %Y} 
-#
-#${voffset 20}${color}${font PT Sans:bold:size=16}CPU$alignr$cpu%
-#
-#${color}${font PT Sans:bold:size=16}RAM$alignr$mem$color2/$memmax$color$font
-#
-#${font PT Sans:bold:size=16}${color}Swap$alignr${swap}$color2/${swapfree}$color$font
-#${voffset 10}${color2}${alignr}${execi 1200 whoami}@${nodename}
-#${alignr}${color2}${font}uptime: ${color}${uptime_short}
-#${voffset 5}${color2}${font}${alignr}kernel: ${color}${kernel}
+${voffset -50}$color${font Josefin Sans Std:light:size=96}$alignr${time %e}\
+${voffset -60}$color2${font Josefin Sans Std:bold:size=24}${exec snrt `date +%e`} 
+${voffset -32}$color${font Josefin Sans Std:light:size=32}${time %A}
+${voffset 8}$color2${font Josefin Sans Std:bold:size=32}${time %B}\
+ $color${font Josefin Sans Std:light:size=28}${time %Y}
+
+${font}${alignc}Battery: ${battery BAT1}
 ]]
 
